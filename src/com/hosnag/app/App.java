@@ -31,8 +31,8 @@ public class App {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Connection conn = conectar("10.129.100.5", "5432", "db_EFacturacion_", "cajas", "cajas_facturacion");
-        saveFile("1", "2015","01", "001", "003", "000000777", "C:\\Users\\ccarreno\\Desktop\\FacturacionElectronica\\1-001-020000000545.XML", conn);
+        Connection conn = conectar("servidor", "puerto", "base de datos", "usuario", "contraseña");
+        saveFile("1", "2015","01", "001", "003", "000000777", "C:\\factura.XML", conn);
                 
         //Connection conn = conectar(args[0], args[1], args[2], args[3], args[4]);
         
